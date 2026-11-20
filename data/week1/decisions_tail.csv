@@ -1,7 +1,4 @@
 ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model_p_up,market_p_up,ask,edge,stake,shares,spot,price_to_beat,english
-2026-11-20 02:56:21 PT,trend_down,5m,1795172100,218.2,skip,momentum_conflict,,,0.1650,0.1450,,,0.00,0.00,1754.4400,1756.7087,The 60m trend says Up but the last 15m (-0.19%) disagree.
-2026-11-20 02:56:21 PT,breakdown,5m,1795172100,218.2,skip,no_breakout,,,0.1650,0.1450,,,0.00,0.00,1754.4400,1756.7087,"Price is inside its 30-min range ($1,746.38-$1,761.47); no breakout."
-2026-11-20 02:56:21 PT,auto_pick,5m,1795172100,218.2,skip,leader_idle,,,0.1650,,,,0.00,0.00,1754.4400,1756.7087,Current pick trend_volume (6h +16.32) isn't betting this round; sitting out: #1 trend_volume not betting (momentum_conflict).
 2026-11-20 02:56:41 PT,control,5m,1795172100,198.2,skip,hour_filter,,,0.1875,,,,0.00,0.00,1754.7550,1756.7087,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 2:00 PT hour net $-23.45.
 2026-11-20 02:56:41 PT,model_lead,5m,1795172100,198.2,skip,ask_band,Down,0.8138,0.1875,0.1850,0.8200,-0.0166,0.00,0.00,1754.7550,1756.7087,"Down costs 82c, outside this variant's 0.2-0.8 price range."
 2026-11-20 02:56:41 PT,trend_volume,5m,1795172100,198.2,skip,momentum_conflict,,,0.1875,0.1850,,,0.00,0.00,1754.7550,1756.7087,The 60m trend says Up but the last 15m (-0.19%) disagree.
@@ -1498,3 +1495,6 @@ ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model
 2026-11-20 05:18:03 PT,trend_down,5m,1795180500,116.6,skip,choppy,,,0.9915,0.9900,,,0.00,0.00,1736.8700,1732.3561,"Choppy: price went back and forth (straightness 0.05, need 0.12)."
 2026-11-20 05:18:03 PT,breakdown,5m,1795180500,116.6,skip,no_breakout,,,0.9915,0.9900,,,0.00,0.00,1736.8700,1732.3561,"Price is inside its 30-min range ($1,730.17-$1,743.94); no breakout."
 2026-11-20 05:18:03 PT,auto_pick,5m,1795180500,116.6,skip,leader_idle,,,0.9915,,,,0.00,0.00,1736.8700,1732.3561,Current pick ride_favorite_80 (6h +10.86) isn't betting this round; sitting out: #1 ride_favorite_80 not betting (no_ask).
+2026-11-20 05:18:18 PT,hourly_ride_down,1h,1795179600,2501.9,skip,lead_small,Down,0.5358,0.4633,0.4650,,,0.00,0.00,1737.3975,1738.3483,Lead gate: ETH is $+0.95 past the price to beat our way (Down); need at least $1.56 (0.09% of price).
+2026-11-20 05:18:18 PT,ride_favorite_80,5m,1795180500,101.9,skip,no_ask,Up,,0.9983,0.9900,,,0.00,0.00,1737.3975,1732.3561,Nobody is selling Up right now.
+2026-11-20 05:18:18 PT,down_ride,5m,1795180500,101.9,skip,side_not_allowed,Up,0.9942,0.9983,0.9900,,,0.00,0.00,1737.3975,1732.3561,This variant only bets Down; the signal says Up.
