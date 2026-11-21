@@ -1186,79 +1186,91 @@
     "to": "trend_volume",
     "ts_pt": "2026-11-21 02:01:01 PT",
     "why": "ride_favorite_80 no longer qualifies"
+   },
+   {
+    "from": "trend_volume",
+    "scope": "6h",
+    "scores": {
+     "breakdown": [
+      -5.0,
+      1
+     ],
+     "control": [
+      -13.24,
+      21
+     ],
+     "down_ride": [
+      -2.11,
+      4
+     ],
+     "model_lead": [
+      -5.12,
+      2
+     ],
+     "ride_favorite_80": [
+      0.45,
+      25
+     ],
+     "trend_down": [
+      -10.63,
+      5
+     ],
+     "trend_volume": [
+      -1.78,
+      1
+     ]
+    },
+    "to": "ride_favorite_80",
+    "ts_pt": "2026-11-21 02:21:00 PT",
+    "why": "trend_volume no longer qualifies"
    }
   ],
-  "last_check_ws": 1795255200,
-  "leader": "trend_volume",
-  "scope": "since_start",
+  "last_check_ws": 1795256400,
+  "leader": "ride_favorite_80",
+  "scope": "6h",
   "scores": {
    "breakdown": [
-    -10.62,
-    7
+    -5.0,
+    1
    ],
    "control": [
-    -31.38,
-    231
+    -13.24,
+    21
    ],
    "down_ride": [
-    17.78,
-    31
+    -2.11,
+    4
    ],
    "model_lead": [
-    -7.07,
-    23
+    -5.12,
+    2
    ],
    "ride_favorite_80": [
-    -16.62,
-    214
+    0.45,
+    25
    ],
    "trend_down": [
-    -6.3,
-    53
+    -10.63,
+    5
    ],
    "trend_volume": [
-    27.93,
-    45
+    -1.78,
+    1
    ]
   }
  },
  "open": [
   {
-   "shares": 5.51,
-   "side": "Down",
+   "shares": 5.46,
+   "side": "Up",
    "tf": "5m",
-   "total_cost": 4.993713,
-   "trade_id": "W000755",
+   "total_cost": 4.99990218,
+   "trade_id": "W000759",
    "variant": "ride_favorite_80",
-   "window_start": 1795254900
-  },
-  {
-   "shares": 5.0,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 4.5315,
-   "trade_id": "W000756",
-   "variant": "auto_pick",
-   "window_start": 1795254900
+   "window_start": 1795256100
   }
  ],
  "ptb": {
-  "1795248000": {
-   "p": 1627.5304166666667,
-   "src": "own_spot_samples_60s"
-  },
-  "1795248300": {
-   "p": 1624.18575,
-   "src": "own_spot_samples_60s"
-  },
-  "1795248600": {
-   "p": 1620.9181666666666,
-   "src": "own_spot_samples_60s"
-  },
-  "1795248900": {
-   "p": 1623.9815,
-   "src": "own_spot_samples_60s"
-  },
   "1795249200": {
    "p": 1624.6346666666666,
    "src": "own_spot_samples_60s"
@@ -1342,10 +1354,26 @@
   "1795255200": {
    "p": 1636.1490833333335,
    "src": "own_spot_samples_60s"
+  },
+  "1795255500": {
+   "p": 1634.6169166666666,
+   "src": "own_spot_samples_60s"
+  },
+  "1795255800": {
+   "p": 1634.9723333333334,
+   "src": "own_spot_samples_60s"
+  },
+  "1795256100": {
+   "p": 1633.2136666666668,
+   "src": "own_spot_samples_60s"
+  },
+  "1795256400": {
+   "p": 1633.5415833333332,
+   "src": "own_spot_samples_60s"
   }
  },
  "scale_pos": {},
- "seq": 756,
+ "seq": 759,
  "traded_windows": {
   "auto_pick": [
    1795214400,
@@ -1519,9 +1547,6 @@
    1795248900
   ],
   "ride_favorite_80": [
-   1795212600,
-   1795212900,
-   1795213200,
    1795213500,
    1795213800,
    1795214100,
@@ -1568,7 +1593,10 @@
    1795254000,
    1795254300,
    1795254600,
-   1795254900
+   1795254900,
+   1795255200,
+   1795255800,
+   1795256100
   ],
   "trend_down": [
    1795141800,
