@@ -1,7 +1,7 @@
 {
  "auto_pick": {
-  "cand": "trend_volume",
-  "cand_n": 1,
+  "cand": null,
+  "cand_n": 0,
   "history": [
    {
     "from": null,
@@ -1482,10 +1482,47 @@
     "to": "control",
     "ts_pt": "2026-11-22 01:16:01 PT",
     "why": "best at 2 straight checks"
+   },
+   {
+    "from": "control",
+    "scope": "6h",
+    "scores": {
+     "breakdown": [
+      0.0,
+      0
+     ],
+     "control": [
+      2.28,
+      8
+     ],
+     "down_ride": [
+      -1.11,
+      3
+     ],
+     "model_lead": [
+      6.44,
+      3
+     ],
+     "ride_favorite_80": [
+      2.24,
+      10
+     ],
+     "trend_down": [
+      3.98,
+      6
+     ],
+     "trend_volume": [
+      9.33,
+      10
+     ]
+    },
+    "to": "trend_volume",
+    "ts_pt": "2026-11-22 02:01:01 PT",
+    "why": "best at 2 straight checks"
    }
   ],
-  "last_check_ws": 1795340400,
-  "leader": "control",
+  "last_check_ws": 1795341600,
+  "leader": "trend_volume",
   "scope": "6h",
   "scores": {
    "breakdown": [
@@ -1493,8 +1530,8 @@
     0
    ],
    "control": [
-    7.75,
-    9
+    2.28,
+    8
    ],
    "down_ride": [
     -1.11,
@@ -1509,33 +1546,17 @@
     10
    ],
    "trend_down": [
-    8.61,
-    8
+    3.98,
+    6
    ],
    "trend_volume": [
-    9.28,
+    9.33,
     10
    ]
   }
  },
  "open": [],
  "ptb": {
-  "1795333200": {
-   "p": 1659.7340000000002,
-   "src": "own_spot_samples_60s"
-  },
-  "1795333500": {
-   "p": 1661.1019999999999,
-   "src": "own_spot_samples_60s"
-  },
-  "1795333800": {
-   "p": 1664.2008620689653,
-   "src": "own_spot_samples_60s"
-  },
-  "1795334100": {
-   "p": 1664.4655833333334,
-   "src": "own_spot_samples_60s"
-  },
   "1795334400": {
    "p": 1663.55225,
    "src": "own_spot_samples_60s"
@@ -1619,10 +1640,26 @@
   "1795340400": {
    "p": 1688.904,
    "src": "own_spot_samples_60s"
+  },
+  "1795340700": {
+   "p": 1692.1931666666667,
+   "src": "own_spot_samples_60s"
+  },
+  "1795341000": {
+   "p": 1695.0576666666668,
+   "src": "own_spot_samples_60s"
+  },
+  "1795341300": {
+   "p": 1707.88125,
+   "src": "own_spot_samples_60s"
+  },
+  "1795341600": {
+   "p": 1716.9983333333332,
+   "src": "own_spot_samples_60s"
   }
  },
  "scale_pos": {},
- "seq": 1094,
+ "seq": 1095,
  "traded_windows": {
   "auto_pick": [
    1795285200,
@@ -1926,7 +1963,6 @@
    1795326300
   ],
   "trend_volume": [
-   1795171200,
    1795171500,
    1795174800,
    1795175700,
@@ -1975,7 +2011,8 @@
    1795335300,
    1795335900,
    1795336200,
-   1795338000
+   1795338000,
+   1795341300
   ]
  }
 }
