@@ -483,10 +483,47 @@
     "to": "control",
     "ts_pt": "2026-11-23 15:06:01 PT",
     "why": "best at 2 straight checks"
+   },
+   {
+    "from": "control",
+    "scope": "6h",
+    "scores": {
+     "breakdown": [
+      2.91,
+      2
+     ],
+     "control": [
+      3.53,
+      47
+     ],
+     "down_ride": [
+      2.34,
+      9
+     ],
+     "model_lead": [
+      8.02,
+      5
+     ],
+     "ride_favorite_80": [
+      -9.65,
+      42
+     ],
+     "trend_down": [
+      2.59,
+      12
+     ],
+     "trend_volume": [
+      1.33,
+      4
+     ]
+    },
+    "to": "model_lead",
+    "ts_pt": "2026-11-23 15:36:01 PT",
+    "why": "best at 2 straight checks"
    }
   ],
-  "last_check_ws": 1795475700,
-  "leader": "control",
+  "last_check_ws": 1795476900,
+  "leader": "model_lead",
   "scope": "6h",
   "scores": {
    "breakdown": [
@@ -494,19 +531,19 @@
     2
    ],
    "control": [
-    7.83,
-    46
+    3.53,
+    47
    ],
    "down_ride": [
     2.34,
     9
    ],
    "model_lead": [
-    5.85,
-    4
+    8.02,
+    5
    ],
    "ride_favorite_80": [
-    1.1,
+    -9.65,
     42
    ],
    "trend_down": [
@@ -534,65 +571,76 @@
   "start": 20.0,
   "variant": "bankroll_20"
  },
+ "crowd_stats": {
+  "bets": 0,
+  "comments_empty": 5,
+  "comments_failed": 0,
+  "comments_present": 0,
+  "flow_failed": 0,
+  "flow_ok": 2,
+  "last": "comments in-window=0 (Up 0/Down 0, fetched 0); buy flow Up $0 vs Down $0 (0 buys); bid size Up 16 vs Down 25",
+  "windows": 5
+ },
+ "crowd_windows": [
+  1795475700,
+  1795476000,
+  1795476300,
+  1795476600,
+  1795476900
+ ],
+ "max_profit": {
+  "balance": 92.9616,
+  "equity": 92.9616,
+  "floor": 12.0,
+  "funded": true,
+  "funded_at": "2026-11-23 15:17:49 PT",
+  "last_signal": "control",
+  "n_bets": 3,
+  "n_settled": 3,
+  "paused": false,
+  "paused_at": null,
+  "rest": {
+   "edge": 0.05213688920072754,
+   "english": "Resting a paper limit at the 43c bid for 30.00 Down (control; ask is 45c). Will take the ask if it does not fill with 40s left. Cash $92.96.",
+   "est_prob": 0.5194618892007276,
+   "limit": 0.43,
+   "model_p_up": 0.48053811079927244,
+   "shares": 30.0,
+   "side": "Down",
+   "signal": "control",
+   "slug": "eth-updown-5m-1795476900",
+   "tf": "5m",
+   "title": "Ethereum Up or Down - November 23, 6:35PM-6:40PM ET",
+   "ts": 1795477055.3429537,
+   "variant": "max_profit",
+   "ws": 1795476900
+  },
+  "start": 100.0,
+  "variant": "max_profit"
+ },
  "open": [
   {
-   "shares": 6.45,
-   "side": "Up",
-   "tf": "5m",
-   "total_cost": 4.1053734,
-   "trade_id": "W000555",
-   "ts_fill": 1795475497.812659,
-   "variant": "control",
-   "window_start": 1795475400
-  },
-  {
-   "shares": 5.0,
-   "side": "Up",
-   "tf": "5m",
-   "total_cost": 3.1824600000000003,
-   "trade_id": "W000557",
-   "ts_fill": 1795475497.8134284,
-   "variant": "auto_pick",
-   "window_start": 1795475400
-  },
-  {
-   "shares": 5.0,
-   "side": "Up",
-   "tf": "5m",
-   "total_cost": 2.836625,
-   "trade_id": "W000558",
-   "ts_fill": 1795475500.0023365,
-   "variant": "model_lead",
-   "window_start": 1795475400
-  },
-  {
-   "shares": 5.95,
+   "shares": 6.66,
    "side": "Down",
    "tf": "5m",
-   "total_cost": 4.99726815,
-   "trade_id": "W000559",
-   "ts_fill": 1795475613.759974,
-   "variant": "ride_favorite_80",
-   "window_start": 1795475400
+   "total_cost": 3.1123845000000006,
+   "trade_id": "W000573",
+   "ts_fill": 1795477056.2788534,
+   "variant": "control",
+   "window_start": 1795476900
+  },
+  {
+   "shares": 6.66,
+   "side": "Down",
+   "tf": "5m",
+   "total_cost": 3.1123845000000006,
+   "trade_id": "W000574",
+   "ts_fill": 1795477056.2793648,
+   "variant": "control_xo",
+   "window_start": 1795476900
   }
  ],
  "ptb": {
-  "1795468500": {
-   "p": 1723.58225,
-   "src": "own_spot_samples_60s"
-  },
-  "1795468800": {
-   "p": 1717.6910833333334,
-   "src": "own_spot_samples_60s"
-  },
-  "1795469100": {
-   "p": 1718.2725,
-   "src": "own_spot_samples_60s"
-  },
-  "1795469400": {
-   "p": 1722.8066666666666,
-   "src": "own_spot_samples_60s"
-  },
   "1795469700": {
    "p": 1721.7305833333335,
    "src": "own_spot_samples_60s"
@@ -676,10 +724,26 @@
   "1795475700": {
    "p": 1715.4584166666668,
    "src": "own_spot_samples_60s"
+  },
+  "1795476000": {
+   "p": 1715.8604166666667,
+   "src": "own_spot_samples_60s"
+  },
+  "1795476300": {
+   "p": 1711.7555,
+   "src": "own_spot_samples_60s"
+  },
+  "1795476600": {
+   "p": 1716.4460833333333,
+   "src": "own_spot_samples_60s"
+  },
+  "1795476900": {
+   "p": 1711.4171666666666,
+   "src": "own_spot_samples_60s"
   }
  },
  "scale_pos": {},
- "seq": 560,
+ "seq": 574,
  "traded_windows": {
   "auto_pick": [
    1795431900,
@@ -731,7 +795,9 @@
    1795473600,
    1795473900,
    1795475100,
-   1795475400
+   1795475400,
+   1795475700,
+   1795476600
   ],
   "bankroll_20": [
    1795415700,
@@ -841,12 +907,16 @@
    1795474200,
    1795474800,
    1795475100,
-   1795475400
+   1795475400,
+   1795475700,
+   1795476600,
+   1795476900
   ],
   "control_15m": [
    1795472100,
    1795473000,
-   1795473900
+   1795473900,
+   1795475700
   ],
   "control_xo": [
    1795472100,
@@ -858,7 +928,10 @@
    1795474200,
    1795474800,
    1795475100,
-   1795475400
+   1795475400,
+   1795475700,
+   1795476600,
+   1795476900
   ],
   "down_ride": [
    1795406700,
@@ -880,6 +953,11 @@
    1795470900,
    1795473600,
    1795473900
+  ],
+  "max_profit": [
+   "5m:1795475700",
+   "15m:1795475700",
+   "5m:1795476600"
   ],
   "model_lead": [
    1795412700,
@@ -945,7 +1023,8 @@
    1795473300,
    1795473600,
    1795474800,
-   1795475400
+   1795475400,
+   1795475700
   ],
   "ride_favorite_80_xo": [
    1795472100,
@@ -957,7 +1036,8 @@
    1795474200,
    1795474500,
    1795474800,
-   1795475400
+   1795475400,
+   1795475700
   ],
   "trend_down": [
    1795415100,
