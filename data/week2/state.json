@@ -76,19 +76,56 @@
     "to": null,
     "ts_pt": "2026-11-22 21:26:01 PT",
     "why": "nobody has 5+ settled bets and positive P&L"
+   },
+   {
+    "from": null,
+    "scope": "6h",
+    "scores": {
+     "breakdown": [
+      0.0,
+      0
+     ],
+     "control": [
+      3.7,
+      10
+     ],
+     "down_ride": [
+      1.87,
+      1
+     ],
+     "model_lead": [
+      0.0,
+      0
+     ],
+     "ride_favorite_80": [
+      -3.17,
+      13
+     ],
+     "trend_down": [
+      0.0,
+      0
+     ],
+     "trend_volume": [
+      0.0,
+      0
+     ]
+    },
+    "to": "control",
+    "ts_pt": "2026-11-22 21:36:01 PT",
+    "why": "first pick"
    }
   ],
-  "last_check_ws": 1795411500,
-  "leader": null,
-  "scope": "since_start",
+  "last_check_ws": 1795412700,
+  "leader": "control",
+  "scope": "6h",
   "scores": {
    "breakdown": [
     0.0,
     0
    ],
    "control": [
-    -3.01,
-    8
+    6.32,
+    11
    ],
    "down_ride": [
     1.87,
@@ -99,8 +136,8 @@
     0
    ],
    "ride_favorite_80": [
-    -4.05,
-    12
+    -2.01,
+    14
    ],
    "trend_down": [
     0.0,
@@ -113,40 +150,21 @@
   }
  },
  "bankroll": {
-  "balance": 9.8674,
+  "balance": 8.8496,
   "busted": false,
   "busted_at": null,
-  "equity": 9.8674,
-  "following": null,
+  "equity": 8.8496,
+  "following": "control",
   "funded": true,
   "goal": 1000.0,
   "goal_reached": false,
   "goal_reached_at": null,
-  "n_bets": 3,
-  "n_settled": 3,
+  "n_bets": 5,
+  "n_settled": 5,
   "start": 20.0,
   "variant": "bankroll_20"
  },
- "open": [
-  {
-   "shares": 6.0,
-   "side": "Up",
-   "tf": "5m",
-   "total_cost": 3.105,
-   "trade_id": "W000028",
-   "variant": "control",
-   "window_start": 1795411500
-  },
-  {
-   "shares": 5.88,
-   "side": "Up",
-   "tf": "5m",
-   "total_cost": 4.994519039999999,
-   "trade_id": "W000029",
-   "variant": "ride_favorite_80",
-   "window_start": 1795411500
-  }
- ],
+ "open": [],
  "ptb": {
   "1795405800": {
    "p": 1728.49,
@@ -227,20 +245,40 @@
   "1795411500": {
    "p": 1729.2790833333333,
    "src": "own_spot_samples_60s"
+  },
+  "1795411800": {
+   "p": 1731.1068333333335,
+   "src": "own_spot_samples_60s"
+  },
+  "1795412100": {
+   "p": 1726.3896666666667,
+   "src": "own_spot_samples_60s"
+  },
+  "1795412400": {
+   "p": 1730.7556666666667,
+   "src": "own_spot_samples_60s"
+  },
+  "1795412700": {
+   "p": 1733.5753333333334,
+   "src": "own_spot_samples_60s"
   }
  },
  "scale_pos": {},
- "seq": 29,
+ "seq": 39,
  "traded_windows": {
   "auto_pick": [
    1795409400,
    1795410600,
-   1795411200
+   1795411200,
+   1795412400,
+   1795412700
   ],
   "bankroll_20": [
    1795409400,
    1795410600,
-   1795411200
+   1795411200,
+   1795412400,
+   1795412700
   ],
   "control": [
    1795405800,
@@ -251,10 +289,16 @@
    1795409400,
    1795410600,
    1795411200,
-   1795411500
+   1795411500,
+   1795411800,
+   1795412400,
+   1795412700
   ],
   "down_ride": [
    1795406700
+  ],
+  "model_lead": [
+   1795412700
   ],
   "ride_favorite_80": [
    1795405800,
@@ -269,7 +313,9 @@
    1795410000,
    1795410600,
    1795411200,
-   1795411500
+   1795411500,
+   1795412400,
+   1795412700
   ]
  }
 }
