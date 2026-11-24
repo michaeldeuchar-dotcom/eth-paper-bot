@@ -557,10 +557,47 @@
     "to": "control",
     "ts_pt": "2026-11-23 16:11:01 PT",
     "why": "best at 2 straight checks"
+   },
+   {
+    "from": "control",
+    "scope": "6h",
+    "scores": {
+     "breakdown": [
+      2.91,
+      2
+     ],
+     "control": [
+      3.63,
+      47
+     ],
+     "down_ride": [
+      -5.59,
+      8
+     ],
+     "model_lead": [
+      10.43,
+      6
+     ],
+     "ride_favorite_80": [
+      -17.03,
+      40
+     ],
+     "trend_down": [
+      -8.88,
+      13
+     ],
+     "trend_volume": [
+      -4.45,
+      6
+     ]
+    },
+    "to": "model_lead",
+    "ts_pt": "2026-11-23 16:46:00 PT",
+    "why": "best at 2 straight checks"
    }
   ],
-  "last_check_ws": 1795480500,
-  "leader": "control",
+  "last_check_ws": 1795481700,
+  "leader": "model_lead",
   "scope": "6h",
   "scores": {
    "breakdown": [
@@ -568,28 +605,28 @@
     2
    ],
    "control": [
-    15.3,
-    48
+    3.63,
+    47
    ],
    "down_ride": [
-    -1.73,
-    7
+    -5.59,
+    8
    ],
    "model_lead": [
     10.43,
     6
    ],
    "ride_favorite_80": [
-    -11.11,
-    40
+    -16.22,
+    41
    ],
    "trend_down": [
-    -5.01,
-    12
+    -8.88,
+    13
    ],
    "trend_volume": [
-    -0.95,
-    5
+    -4.45,
+    6
    ]
   }
  },
@@ -609,14 +646,14 @@
   "variant": "bankroll_20"
  },
  "crowd_stats": {
-  "bets": 1,
-  "comments_empty": 17,
+  "bets": 9,
+  "comments_empty": 21,
   "comments_failed": 0,
   "comments_present": 0,
   "flow_failed": 0,
-  "flow_ok": 10,
-  "last": "comments in-window=0 (Up 0/Down 0, fetched 0); buy flow Up $12 vs Down $289 (46 buys); bid size Up 25 vs Down 20",
-  "windows": 17
+  "flow_ok": 14,
+  "last": "comments in-window=0 (Up 0/Down 0, fetched 0); buy flow Up $388 vs Down $154 (93 buys); bid size Up 6272 vs Down 0",
+  "windows": 21
  },
  "crowd_windows": [
   1795475700,
@@ -635,17 +672,21 @@
   1795479600,
   1795479900,
   1795480200,
-  1795480500
+  1795480500,
+  1795480800,
+  1795481100,
+  1795481400,
+  1795481700
  ],
  "max_profit": {
-  "balance": 109.1029,
-  "equity": 109.1029,
+  "balance": 112.7556,
+  "equity": 112.7556,
   "floor": 12.0,
   "funded": true,
   "funded_at": "2026-11-23 15:17:49 PT",
-  "last_signal": "control",
-  "n_bets": 16,
-  "n_settled": 16,
+  "last_signal": "control_15m",
+  "n_bets": 17,
+  "n_settled": 17,
   "paused": false,
   "paused_at": null,
   "rest": {},
@@ -658,99 +699,13 @@
    "side": "Down",
    "tf": "15m",
    "total_cost": 4.080937,
-   "trade_id": "W000629",
-   "ts_fill": 1795480429.5327096,
+   "trade_id": "W000649",
+   "ts_fill": 1795481828.21153,
    "variant": "control_15m",
-   "window_start": 1795480200
-  },
-  {
-   "shares": 5.63,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 4.9960169599999995,
-   "trade_id": "W000631",
-   "ts_fill": 1795480644.2579052,
-   "variant": "control",
-   "window_start": 1795480500
-  },
-  {
-   "shares": 5.0,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 4.43696,
-   "trade_id": "W000634",
-   "ts_fill": 1795480644.392239,
-   "variant": "auto_pick",
-   "window_start": 1795480500
-  },
-  {
-   "shares": 5.0,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 3.8638399999999997,
-   "trade_id": "W000635",
-   "ts_fill": 1795480670.8143077,
-   "variant": "trend_down",
-   "window_start": 1795480500
-  },
-  {
-   "shares": 5.0,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 3.8638399999999997,
-   "trade_id": "W000636",
-   "ts_fill": 1795480670.8146925,
-   "variant": "down_ride",
-   "window_start": 1795480500
-  },
-  {
-   "shares": 5.26,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 4.06475968,
-   "trade_id": "W000637",
-   "ts_fill": 1795480670.8380508,
-   "variant": "crowd",
-   "window_start": 1795480500
-  },
-  {
-   "shares": 5.93,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 4.9974349761,
-   "trade_id": "W000638",
-   "ts_fill": 1795480680.8814108,
-   "variant": "ride_favorite_80",
-   "window_start": 1795480500
-  },
-  {
-   "shares": 5.0,
-   "side": "Down",
-   "tf": "5m",
-   "total_cost": 3.49077885,
-   "trade_id": "W000640",
-   "ts_fill": 1795480684.7862995,
-   "variant": "trend_volume",
-   "window_start": 1795480500
+   "window_start": 1795481100
   }
  ],
  "ptb": {
-  "1795473300": {
-   "p": 1711.993,
-   "src": "own_spot_samples_60s"
-  },
-  "1795473600": {
-   "p": 1709.1725833333333,
-   "src": "own_spot_samples_60s"
-  },
-  "1795473900": {
-   "p": 1706.2221666666667,
-   "src": "own_spot_samples_60s"
-  },
-  "1795474200": {
-   "p": 1706.2501666666665,
-   "src": "own_spot_samples_60s"
-  },
   "1795474500": {
    "p": 1707.5979166666666,
    "src": "own_spot_samples_60s"
@@ -834,10 +789,26 @@
   "1795480500": {
    "p": 1705.8313333333333,
    "src": "own_spot_samples_60s"
+  },
+  "1795480800": {
+   "p": 1707.0411666666666,
+   "src": "own_spot_samples_60s"
+  },
+  "1795481100": {
+   "p": 1710.05775,
+   "src": "own_spot_samples_60s"
+  },
+  "1795481400": {
+   "p": 1708.0033333333336,
+   "src": "own_spot_samples_60s"
+  },
+  "1795481700": {
+   "p": 1705.4700833333334,
+   "src": "own_spot_samples_60s"
   }
  },
  "scale_pos": {},
- "seq": 641,
+ "seq": 650,
  "traded_windows": {
   "auto_pick": [
    1795431900,
@@ -1028,7 +999,8 @@
    1795473900,
    1795475700,
    1795479300,
-   1795480200
+   1795480200,
+   1795481100
   ],
   "control_xo": [
    1795472100,
@@ -1056,7 +1028,8 @@
    1795480500
   ],
   "crowd": [
-   1795480500
+   1795480500,
+   1795481400
   ],
   "down_ride": [
    1795406700,
@@ -1097,7 +1070,8 @@
    "5m:1795479900",
    "5m:1795480200",
    "15m:1795480200",
-   "5m:1795480500"
+   "5m:1795480500",
+   "15m:1795481100"
   ],
   "model_lead": [
    1795412700,
@@ -1172,7 +1146,10 @@
    1795479000,
    1795479300,
    1795479600,
-   1795480500
+   1795480500,
+   1795480800,
+   1795481100,
+   1795481400
   ],
   "ride_favorite_80_xo": [
    1795472100,
@@ -1192,7 +1169,10 @@
    1795479000,
    1795479300,
    1795479600,
-   1795480500
+   1795480500,
+   1795480800,
+   1795481100,
+   1795481400
   ],
   "trend_down": [
    1795415100,
