@@ -193,8 +193,8 @@
     "cash_out": false
   },
   "control_15m": {
-    "enabled": true,
-    "desc": "15-MINUTE: same idea as control, but on the 15-minute Up/Down market. Timing gates are scaled \u00d73 to fit the longer window (first 3 minutes are skipped, like the first minute on 5m). Holds to the official result (no early cash-out on this variant).",
+    "enabled": false,
+    "desc": "DISABLED Nov 25 (no new bets; open bets still settle; history kept): 135 settled, 65 won, -$91.04 fake (-16%); -$20.21 in the last 6 hours. Holding the 15-minute market this way keeps losing. 15-MINUTE: same idea as control, but on the 15-minute Up/Down market. Timing gates are scaled \u00d73 to fit the longer window (first 3 minutes are skipped, like the first minute on 5m). Holds to the official result (no early cash-out on this variant).",
     "timeframe": "15m",
     "mode": "model",
     "blend_market": 0.0,
@@ -372,8 +372,7 @@
         "crowd"
       ],
       "15m": [
-        "trend_volume_15m",
-        "control_15m"
+        "trend_volume_15m"
       ]
     },
     "circuit_breaker": "off",
