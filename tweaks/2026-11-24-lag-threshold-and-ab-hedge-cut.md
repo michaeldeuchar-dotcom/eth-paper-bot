@@ -24,4 +24,7 @@ Checks before push: `python -m py_compile *.py`, a dry `load_variants()` (ab_hed
 
 Same safe method as before: push `main`, wait for the running slice's next state save to `data`, cancel that slice so the chain restarts on the new commit, confirm a fresh heartbeat.
 
-(Run IDs and restart times are added right after the restart.)
+- Pushed `dd32544` at about 4:55 PM PT.
+- The running slice 45497601739 saved state at 5:06 PM PT and was cancelled right after; the chain restarted on `dd32544` as run [45523296035](https://github.com/michaeldeuchar-dotcom/eth-paper-bot/actions/runs/45523296035) at 5:06 PM PT.
+- First save from the new slice: 5:27 PM PT, heartbeat healthy (600 cycles, spot feed 100% OK, 0 errors). START log lists ab_hedge_15m/1h and all ab_hedge_v2 variants, no ab_hedge_5m. The last ab_hedge_5m bets (opened before the restart) all settled normally.
+- First 20 min with the new $0.50 bar: 33 price_lag log rows; 6 fresh, 4 paper fills (the first ETH lag trades ever).
