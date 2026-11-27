@@ -59,7 +59,7 @@
     "max_round_up_usd": 0
   },
   "trend_volume": {
-    "enabled": true,
+    "enabled": false,
     "desc": "TREND + VOLUME (5m, both ways): bets WITH the last hour's trend when 60m and 15m momentum agree, lower/higher highs and lows, and volume backs the move. 50/50 model+market +3c trend bonus, 3c edge, 90-240s left, asks 30-75c, cap $5 incl. fee. (Best BTC variant, ported with ETH's higher-volatility limit)",
     "timeframe": "5m",
     "min_efficiency": 0.15,
@@ -85,7 +85,7 @@
     "max_round_up_usd": 4
   },
   "trend_volume_xo": {
-    "enabled": true,
+    "enabled": false,
     "desc": "CASH OUT (5m): same entry as trend_volume, but can sell early into the live best bid (only if that bid has enough size for the full position) and pays the taker fee on the sale. Take profit if the bid reaches 95c or the sale would make about +20% after the sell fee. Stop loss if the position is down about 45% (sale proceeds at most 55% of what we paid). Also sells if the price lead flips against us with a minute or less left (and we're in the back half of the window). Holds at least 20 seconds, and leaves the last 8 seconds for the official result. If none of those happen, holds to settlement like the original.",
     "timeframe": "5m",
     "min_efficiency": 0.15,
