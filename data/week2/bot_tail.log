@@ -1,39 +1,3 @@
-2026-11-26 17:11:37 INFO START paper-only bot pid=2514 until=2026-12-07T11:30:00-08:00 variants=control,model_lead,trend_volume_15m,breakdown,hourly_ride_down,max_profit,auto_pick,bankroll_20,sum_arb_5m,price_lag_15m,sum_arb_15m,sum_arb_1h hard_max=$10 toggles: SKIP_FIRST_MINUTE=True HOUR_FILTER=True(min 8) LOG_BET_REASONS=True
-2026-11-26 17:11:38 INFO TREND 15m window=1795741200 spot=1700.1050 ptb=1698.5228 3h +0.28% (z +0.4), 15m +0.22% (z +1.0), structure mixed (HH2 HL2 LH1 LL1), 5m +0.11%, spike 0.4x (3up/2dn of last 5 candles), vol up/down 0.91x, chop-eff 0.04, ann vol 41%, range 1692.22-1702.50 breakout vol up 0.0x / down 0.0x
-2026-11-26 17:11:38 INFO REASON [max_profit] Not betting: No source strategy has a clear entry in this 15m window (203s left). Cash $12.00.
-2026-11-26 17:11:38 INFO REASON [price_lag_15m] Not betting: Up at 80c: model 84% minus price+fee leaves 2.5c (need 5c after the fee and a safety buffer).
-2026-11-26 17:11:38 INFO REASON [sum_arb_15m] Not betting: Up 80.0c + Down 22.0c + fees = 104.32c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-26 17:11:38 INFO TREND 1h window=1795741200 spot=1700.1050 ptb=1698.5228 4h -0.20% (z -0.2), 75m +0.70% (z +1.4), structure down (HH1 HL1 LH2 LL2), 25m +0.20%, spike 0.6x (5up/0dn of last 5 candles), vol up/down 0.46x, chop-eff 0.04, ann vol 43%, range 1681.48-1699.33 breakout vol up 1.7x / down 0.0x
-2026-11-26 17:11:38 INFO REASON [sum_arb_1h] Not betting: Up 56.0c + Down 45.0c + fees = 104.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-26 17:11:38 INFO TREND 5m window=1795741800 spot=1700.1050 ptb=1698.7625 60m +0.87% (z +1.9), 15m +0.22% (z +1.0), structure up (HH3 HL3 LH0 LL0), 5m +0.11%, spike 0.4x (3up/2dn of last 5 candles), vol up/down 1.03x, chop-eff 0.30, ann vol 42%, range 1692.22-1702.50 breakout vol up 0.0x / down 0.0x
-2026-11-26 17:11:38 INFO PAPER FILL [control] 5m W003443 Up $4.89 = 7.19 sh @ 0.68 (fee $0.110) 203s left
-2026-11-26 17:11:38 INFO REASON [control] Buying $4.89 of Up: I put Up at 80%, price+fee is 69.5c, edge 10.1c.
-2026-11-26 17:11:38 INFO REASON [model_lead] Not betting: $1.00 only buys 1.47 shares of Up at 68c; Polymarket's minimum is 5.
-2026-11-26 17:11:38 INFO REASON [breakdown] Not betting: Price is inside its 30-min range ($1,692.22-$1,702.50); no breakout.
-2026-11-26 17:11:38 INFO REASON [max_profit] Not betting: Kelly wanted 17% of $12.00, which is too small for a 5-share bet at 68c under the 25% / floor caps.
-2026-11-26 17:11:38 INFO REASON [auto_pick] Not betting: Tweak 2 HOUR_FILTER: hour_filter: 16 past trades in the 17:00 PT hour net $-1.95.
-2026-11-26 17:11:38 INFO REASON [bankroll_20] Not betting: Bankroll busted at 2026-11-23 12:11:39 PT: $0.07 left, not enough for a minimum bet. Sitting out.
-2026-11-26 17:11:38 INFO REASON [sum_arb_5m] Not betting: Up 68.0c + Down 33.0c + fees = 104.07c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-26 17:11:38 INFO HEARTBEAT pid=2514 cycles=1 spot=1700.105 open_bets=1 fills=1 spot_ok=1 spot_fail=0 errors=0
-2026-11-26 17:11:40 INFO REASON [model_lead] Not betting: Up at 76c: my estimate 79% beats price+fee by only 1.3c (need 4c).
-2026-11-26 17:11:40 INFO REASON [max_profit] Not betting: No source strategy has a clear entry in this 5m window (201s left). Cash $12.00.
-2026-11-26 17:11:51 INFO REASON [model_lead] Not betting: Up costs 81c, outside this variant's 0.2-0.8 price range.
-2026-11-26 17:12:01 INFO REASON [model_lead] Not betting: Only bets with 180-240s left; 179s left now.
-2026-11-26 17:12:40 INFO HEARTBEAT pid=2514 cycles=32 spot=1700.5425 open_bets=1 fills=1 spot_ok=32 spot_fail=0 errors=0
-2026-11-26 17:13:01 INFO REASON [sum_arb_15m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-26 17:13:31 INFO REASON [breakdown] Not betting: Only bets with 90-240s left; 89s left now.
-2026-11-26 17:13:42 INFO HEARTBEAT pid=2514 cycles=63 spot=1700.5425 open_bets=1 fills=1 spot_ok=63 spot_fail=0 errors=0
-2026-11-26 17:14:11 INFO REASON [price_lag_15m] Not betting: Down is 6.4c cheap vs the model (7% vs 0c + fee), but spot has only moved $-0.290 in the last 8s (need a $0.500 jump the same way as this bet). Logged as a stale edge, not a trade.
-2026-11-26 17:14:21 INFO REASON [sum_arb_5m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
-2026-11-26 17:14:44 INFO HEARTBEAT pid=2514 cycles=94 spot=1699.73 open_bets=1 fills=1 spot_ok=94 spot_fail=0 errors=0
-2026-11-26 17:14:58 INFO REASON [hourly_ride_down] Not betting: Only bets with 1800-2700s left; 2703s left now.
-2026-11-26 17:15:01 INFO REASON [most 15m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 180 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
-2026-11-26 17:15:01 INFO TREND 15m window=1795742100 spot=1699.8850 ptb=1699.7322 3h +0.32% (z +0.4), 15m +0.10% (z +0.4), structure mixed (HH2 HL2 LH1 LL1), 5m +0.08%, spike 0.6x (3up/2dn of last 5 candles), vol up/down 0.94x, chop-eff 0.04, ann vol 41%, range 1692.22-1702.50 breakout vol up 0.0x / down 0.0x
-2026-11-26 17:15:01 INFO REASON [price_lag_15m] Not betting: Up at 46c: model 52% minus price+fee leaves 4.0c (need 5c after the fee and a safety buffer).
-2026-11-26 17:15:01 INFO REASON [sum_arb_15m] Not betting: Up 46.0c + Down 55.0c + fees = 104.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
-2026-11-26 17:15:01 INFO REASON [hourly_ride_down] Not betting: This variant only bets Down; the signal says Up.
-2026-11-26 17:15:01 INFO REASON [most 5m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 60 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
-2026-11-26 17:15:01 INFO TREND 5m window=1795742100 spot=1699.8850 ptb=1699.7322 60m +0.75% (z +1.7), 15m +0.10% (z +0.4), structure up (HH3 HL3 LH0 LL0), 5m +0.08%, spike 0.7x (3up/2dn of last 5 candles), vol up/down 0.98x, chop-eff 0.26, ann vol 43%, range 1692.22-1702.50 breakout vol up 0.0x / down 0.0x
 2026-11-26 17:15:01 INFO REASON [sum_arb_5m] Not betting: Up 42.0c + Down 59.0c + fees = 104.40c/share (need ≤ 98.0c for a locked profit of at least 2c).
 2026-11-26 17:15:05 INFO REASON [price_lag_15m] Not betting: Up is 5.0c cheap vs the model (52% vs 45c + fee), but spot has only moved $0.00000 in the last 8s (need a $0.500 jump the same way as this bet). Logged as a stale edge, not a trade.
 2026-11-26 17:15:45 INFO HEARTBEAT pid=2514 cycles=125 spot=1700.105 open_bets=1 fills=1 spot_ok=125 spot_fail=0 errors=0
@@ -312,3 +276,125 @@
 2026-11-26 18:11:06 INFO REASON [model_lead] Not betting: $1.00 only buys 1.26 shares of Down at 79c; Polymarket's minimum is 5.
 2026-11-26 18:11:08 INFO REASON [model_lead] Not betting: Down at 79c: my estimate 84% beats price+fee by only 3.6c (need 4c).
 2026-11-26 18:11:37 INFO HEARTBEAT pid=2514 cycles=1800 spot=1714.6799999999998 open_bets=1 fills=5 spot_ok=1800 spot_fail=0 errors=0
+2026-11-26 18:11:53 INFO PAPER FILL [model_lead] 5m W003448 Down $2.60 = 5.00 sh @ 0.52 (fee $0.087) 188s left
+2026-11-26 18:11:53 INFO REASON [model_lead] Buying $2.60 of Down: I put Down at 61%, price+fee is 53.7c, edge 6.8c. (rounded $2.00 up to $2.60 for the 5-share minimum)
+2026-11-26 18:11:53 INFO PAPER FILL [auto_pick] 5m W003449 Down $2.90 = 5.58 sh @ 0.52 (fee $0.097) 188s left
+2026-11-26 18:11:53 INFO REASON [auto_pick] Following the pick model_lead (6h net $+2.83 on 6 settled bets): it would buy Down -- Buying $2.60 of Down: I put Down at 61%, price+fee is 53.7c, edge 6.8c. (rounded $2.00 up to $2.60 for the 5-share minimum) auto_pick size $2.90+$0.10 fee (flat $3 target incl. fee).
+2026-11-26 18:12:39 INFO HEARTBEAT pid=2514 cycles=1831 spot=1714.5875 open_bets=3 fills=7 spot_ok=1831 spot_fail=0 errors=0
+2026-11-26 18:13:31 INFO REASON [breakdown] Not betting: Only bets with 90-240s left; 89s left now.
+2026-11-26 18:13:41 INFO HEARTBEAT pid=2514 cycles=1862 spot=1713.6 open_bets=3 fills=7 spot_ok=1862 spot_fail=0 errors=0
+2026-11-26 18:13:59 INFO REASON [sum_arb_5m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-26 18:14:41 INFO HEARTBEAT pid=2514 cycles=1892 spot=1713.85 open_bets=3 fills=7 spot_ok=1892 spot_fail=0 errors=0
+2026-11-26 18:14:58 INFO REASON [hourly_ride_down] Not betting: Only bets with 1800-2700s left; 2701s left now.
+2026-11-26 18:15:00 INFO REASON [most 15m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 180 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
+2026-11-26 18:15:00 INFO TREND 15m window=1795745700 spot=1713.7475 ptb=1713.5731 3h +1.58% (z +1.3), 15m +0.87% (z +2.4), structure up (HH3 HL3 LH0 LL0), 5m -0.13%, spike 4.0x (3up/2dn of last 5 candles), vol up/down 1.45x, chop-eff 0.16, ann vol 67%, range 1695.80-1720.71 breakout vol up 0.0x / down 0.0x
+2026-11-26 18:15:00 INFO REASON [price_lag_15m] Not betting: Up at 47c: model 51% minus price+fee leaves 2.3c (need 5c after the fee and a safety buffer).
+2026-11-26 18:15:00 INFO REASON [sum_arb_15m] Not betting: Up 47.0c + Down 54.0c + fees = 104.48c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-26 18:15:00 INFO REASON [hourly_ride_down] Not betting: This variant only bets Down; the signal says Up.
+2026-11-26 18:15:00 INFO REASON [most 5m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 60 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
+2026-11-26 18:15:01 INFO TREND 5m window=1795745700 spot=1713.7475 ptb=1713.5731 60m +0.78% (z +0.7), 15m +0.87% (z +1.6), structure mixed (HH1 HL1 LH2 LL2), 5m -0.13%, spike 2.7x (3up/2dn of last 5 candles), vol up/down 2.47x, chop-eff 0.18, ann vol 101%, range 1695.80-1720.71 breakout vol up 0.0x / down 0.0x
+2026-11-26 18:15:01 INFO REASON [sum_arb_5m] Not betting: Up 45.0c + Down 56.0c + fees = 104.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-26 18:15:43 INFO HEARTBEAT pid=2514 cycles=1923 spot=1715.1 open_bets=3 fills=7 spot_ok=1923 spot_fail=0 errors=0
+2026-11-26 18:15:54 INFO RESOLVED [control] W003447 Down outcome=Down WON pnl=$+1.09 variant_total=$-47.26
+2026-11-26 18:15:54 INFO RESOLVED [model_lead] W003448 Down outcome=Down WON pnl=$+2.31 variant_total=$+16.06
+2026-11-26 18:15:54 INFO RESOLVED [auto_pick] W003449 Down outcome=Down WON pnl=$+2.58 variant_total=$-46.98
+2026-11-26 18:15:56 INFO REASON [price_lag_15m] Not betting: Daily loss kill switch: today's settled P&L is $-21.45, at or past the -$20.00 pause for this variant. New bets wait until tomorrow (PT).
+2026-11-26 18:16:01 INFO REASON [control] Not betting: $2.00 only buys 2.77 shares of Up at 72c; Polymarket's minimum is 5.
+2026-11-26 18:16:01 INFO REASON [model_lead] Not betting: Up at 72c: my estimate 75% beats price+fee by only 1.3c (need 4c).
+2026-11-26 18:16:01 INFO REASON [breakdown] Not betting: Price is inside its 30-min range ($1,695.80-$1,720.71); no breakout.
+2026-11-26 18:16:01 INFO REASON [max_profit] Not betting: No source strategy has a clear entry in this 5m window (239s left). Cash $12.00.
+2026-11-26 18:16:01 INFO AUTO_PICK CHECK scope=6h leader=model_lead | net P&L/bets: model_lead +5.14/7, breakdown +1.14/1, control -7.07/24
+2026-11-26 18:16:01 INFO REASON [auto_pick] Not betting: Current pick model_lead (6h +5.14) isn't betting this round; sitting out: #1 model_lead not betting (edge_small).
+2026-11-26 18:16:01 INFO REASON [bankroll_20] Not betting: Bankroll busted at 2026-11-23 12:11:39 PT: $0.07 left, not enough for a minimum bet. Sitting out.
+2026-11-26 18:16:03 INFO PAPER FILL [control] 5m W003450 Up $4.00 = 5.71 sh @ 0.70 (fee $0.084) 237s left
+2026-11-26 18:16:03 INFO REASON [control] Buying $4.00 of Up: I put Up at 78%, price+fee is 71.5c, edge 6.1c.
+2026-11-26 18:16:03 INFO REASON [max_profit] Not betting: Kelly wanted 11% of $12.00, which is too small for a 5-share bet at 70c under the 25% / floor caps.
+2026-11-26 18:16:06 INFO REASON [price_lag_15m] Not betting: Up is 5.3c cheap vs the model (67% vs 60c + fee), but spot has only moved $0.435 in the last 8s (need a $0.500 jump the same way as this bet). Logged as a stale edge, not a trade.
+2026-11-26 18:16:21 INFO PAPER FILL [model_lead] 5m W003451 Up $2.90 = 5.00 sh @ 0.58 (fee $0.085) 219s left
+2026-11-26 18:16:21 INFO REASON [model_lead] Buying $2.90 of Up: I put Up at 65%, price+fee is 59.7c, edge 5.1c. (rounded $1.00 up to $2.90 for the 5-share minimum)
+2026-11-26 18:16:21 INFO PAPER FILL [auto_pick] 5m W003452 Up $2.91 = 5.02 sh @ 0.58 (fee $0.086) 219s left
+2026-11-26 18:16:21 INFO REASON [auto_pick] Following the pick model_lead (6h net $+5.14 on 7 settled bets): it would buy Up -- Buying $2.90 of Up: I put Up at 65%, price+fee is 59.7c, edge 5.1c. (rounded $1.00 up to $2.90 for the 5-share minimum) auto_pick size $2.91+$0.09 fee (flat $3 target incl. fee).
+2026-11-26 18:16:45 INFO HEARTBEAT pid=2514 cycles=1954 spot=1713.17 open_bets=3 fills=10 spot_ok=1954 spot_fail=0 errors=0
+2026-11-26 18:17:45 INFO HEARTBEAT pid=2514 cycles=1984 spot=1713.38 open_bets=3 fills=10 spot_ok=1984 spot_fail=0 errors=0
+2026-11-26 18:18:00 INFO REASON [trend_volume_15m] Not betting: Up at 51c: my estimate 54% beats price+fee by only 1.1c (need 3c).
+2026-11-26 18:18:31 INFO REASON [breakdown] Not betting: Only bets with 90-240s left; 89s left now.
+2026-11-26 18:18:47 INFO HEARTBEAT pid=2514 cycles=2015 spot=1715.135 open_bets=3 fills=10 spot_ok=2015 spot_fail=0 errors=0
+2026-11-26 18:19:00 INFO PAPER FILL [trend_volume_15m] 15m W003453 Up $2.55 = 5.00 sh @ 0.51 (fee $0.087) 659s left
+2026-11-26 18:19:00 INFO REASON [trend_volume_15m] Buying $2.55 of Up: I put Up at 57%, price+fee is 52.7c, edge 4.3c; trend Up: 3h +1.75% (z +1.4), 15m +0.68%, higher highs/lows, volume 1.52x on trend candles, straightness 0.17. (rounded $1.00 up to $2.55 for the 5-share minimum)
+2026-11-26 18:19:35 INFO REASON [sum_arb_5m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-26 18:19:49 INFO HEARTBEAT pid=2514 cycles=2046 spot=1714.355 open_bets=4 fills=11 spot_ok=2046 spot_fail=0 errors=0
+2026-11-26 18:20:01 INFO REASON [most 5m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 60 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
+2026-11-26 18:20:01 INFO TREND 5m window=1795746000 spot=1713.1750 ptb=1714.1663 60m +0.95% (z +0.9), 15m +0.82% (z +1.5), structure up (HH2 HL2 LH1 LL1), 5m +0.06%, spike 1.0x (4up/1dn of last 5 candles), vol up/down 2.23x, chop-eff 0.20, ann vol 104%, range 1695.80-1720.71 breakout vol up 0.0x / down 0.0x
+2026-11-26 18:20:01 INFO REASON [sum_arb_5m] Not betting: Up 35.0c + Down 67.0c + fees = 105.14c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-26 18:20:49 INFO HEARTBEAT pid=2514 cycles=2076 spot=1712.525 open_bets=4 fills=11 spot_ok=2076 spot_fail=0 errors=0
+2026-11-26 18:21:01 INFO REASON [control] Not betting: Down at 74c: my estimate 69% beats price+fee by only -6.7c (need 3c).
+2026-11-26 18:21:01 INFO REASON [model_lead] Not betting: Down at 74c: my estimate 71% beats price+fee by only -4.8c (need 4c).
+2026-11-26 18:21:01 INFO REASON [breakdown] Not betting: Price is inside its 30-min range ($1,695.88-$1,720.71); no breakout.
+2026-11-26 18:21:01 INFO REASON [max_profit] Not betting: No source strategy has a clear entry in this 5m window (239s left). Cash $12.00.
+2026-11-26 18:21:01 INFO AUTO_PICK CHECK scope=6h leader=model_lead | net P&L/bets: model_lead +5.14/7, breakdown +1.14/1, control -7.07/24
+2026-11-26 18:21:01 INFO REASON [auto_pick] Not betting: Current pick model_lead (6h +5.14) isn't betting this round; sitting out: #1 model_lead not betting (edge_small).
+2026-11-26 18:21:01 INFO REASON [bankroll_20] Not betting: Bankroll busted at 2026-11-23 12:11:39 PT: $0.07 left, not enough for a minimum bet. Sitting out.
+2026-11-26 18:21:27 INFO REASON [control] Not betting: $1.00 only buys 1.58 shares of Down at 63c; Polymarket's minimum is 5.
+2026-11-26 18:21:33 INFO REASON [model_lead] Not betting: Lead gate: ETH is $+0.75 past the price to beat our way (Down); need at least $0.77 (0.045% of price).
+2026-11-26 18:21:41 INFO PAPER FILL [control] 5m W003454 Down $4.81 = 10.69 sh @ 0.45 (fee $0.185) 199s left
+2026-11-26 18:21:41 INFO REASON [control] Buying $4.81 of Down: I put Down at 54%, price+fee is 46.7c, edge 7.7c.
+2026-11-26 18:21:41 INFO REASON [max_profit] Not betting: Kelly wanted 7% of $12.00, which is too small for a 5-share bet at 45c under the 25% / floor caps.
+2026-11-26 18:21:51 INFO HEARTBEAT pid=2514 cycles=2107 spot=1714.355 open_bets=5 fills=12 spot_ok=2107 spot_fail=0 errors=0
+2026-11-26 18:22:01 INFO REASON [model_lead] Not betting: Only bets with 180-240s left; 179s left now.
+2026-11-26 18:22:34 INFO RESOLVED [control] W003450 Up outcome=Up WON pnl=$+1.63 variant_total=$-45.63
+2026-11-26 18:22:34 INFO RESOLVED [model_lead] W003451 Up outcome=Up WON pnl=$+2.01 variant_total=$+18.08
+2026-11-26 18:22:34 INFO RESOLVED [auto_pick] W003452 Up outcome=Up WON pnl=$+2.02 variant_total=$-44.95
+2026-11-26 18:22:51 INFO HEARTBEAT pid=2514 cycles=2137 spot=1714.525 open_bets=2 fills=12 spot_ok=2137 spot_fail=0 errors=0
+2026-11-26 18:23:31 INFO REASON [breakdown] Not betting: Only bets with 90-240s left; 89s left now.
+2026-11-26 18:23:53 INFO HEARTBEAT pid=2514 cycles=2168 spot=1714.335 open_bets=2 fills=12 spot_ok=2168 spot_fail=0 errors=0
+2026-11-26 18:24:01 INFO REASON [sum_arb_5m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-26 18:24:53 INFO HEARTBEAT pid=2514 cycles=2198 spot=1720.155 open_bets=2 fills=12 spot_ok=2198 spot_fail=0 errors=0
+2026-11-26 18:25:01 INFO REASON [most 5m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 60 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
+2026-11-26 18:25:01 INFO TREND 5m window=1795746300 spot=1719.8850 ptb=1719.0883 60m +1.07% (z +1.0), 15m +0.05% (z +0.1), structure up (HH2 HL2 LH1 LL1), 5m +0.12%, spike 0.9x (3up/2dn of last 5 candles), vol up/down 2.32x, chop-eff 0.22, ann vol 104%, range 1695.80-1720.71 breakout vol up 0.0x / down 0.0x
+2026-11-26 18:25:01 INFO REASON [sum_arb_5m] Not betting: Up 41.0c + Down 61.0c + fees = 105.36c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-26 18:25:15 INFO RESOLVED [control] W003454 Down outcome=Up LOST pnl=$-5.00 variant_total=$-50.63
+2026-11-26 18:25:55 INFO HEARTBEAT pid=2514 cycles=2229 spot=1721.275 open_bets=1 fills=12 spot_ok=2229 spot_fail=0 errors=0
+2026-11-26 18:26:01 INFO REASON [control] Not betting: Up at 67c: my estimate 70% beats price+fee by only 1.9c (need 3c).
+2026-11-26 18:26:01 INFO REASON [model_lead] Not betting: Up at 67c: my estimate 68% beats price+fee by only -0.1c (need 4c).
+2026-11-26 18:26:01 INFO REASON [breakdown] Not betting: Price is inside its 30-min range ($1,696.02-$1,720.71); no breakout.
+2026-11-26 18:26:01 INFO REASON [max_profit] Not betting: No source strategy has a clear entry in this 5m window (239s left). Cash $12.00.
+2026-11-26 18:26:01 INFO AUTO_PICK CHECK scope=6h leader=model_lead | net P&L/bets: model_lead +7.16/8, breakdown +1.14/1, control -10.44/26
+2026-11-26 18:26:01 INFO REASON [auto_pick] Not betting: Current pick model_lead (6h +7.16) isn't betting this round; sitting out: #1 model_lead not betting (edge_small).
+2026-11-26 18:26:01 INFO REASON [bankroll_20] Not betting: Bankroll busted at 2026-11-23 12:11:39 PT: $0.07 left, not enough for a minimum bet. Sitting out.
+2026-11-26 18:26:07 INFO PAPER FILL [control] 5m W003455 Up $4.90 = 6.90 sh @ 0.71 (fee $0.099) 233s left
+2026-11-26 18:26:07 INFO REASON [control] Buying $4.90 of Up: I put Up at 84%, price+fee is 72.4c, edge 11.3c.
+2026-11-26 18:26:07 INFO REASON [model_lead] Not betting: $1.00 only buys 1.40 shares of Up at 71c; Polymarket's minimum is 5.
+2026-11-26 18:26:07 INFO REASON [max_profit] Not betting: Kelly wanted 21% of $12.00, which is too small for a 5-share bet at 71c under the 25% / floor caps.
+2026-11-26 18:26:15 INFO REASON [model_lead] Not betting: Up costs 81c, outside this variant's 0.2-0.8 price range.
+2026-11-26 18:26:17 INFO REASON [sum_arb_15m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-26 18:26:31 INFO REASON [breakdown] Not betting: Broke above the 30-min high $1,720.71 but volume only 0.4x normal (need 2.0x).
+2026-11-26 18:26:57 INFO HEARTBEAT pid=2514 cycles=2260 spot=1729.435 open_bets=2 fills=13 spot_ok=2260 spot_fail=0 errors=0
+2026-11-26 18:27:01 INFO REASON [model_lead] Not betting: Only bets with 180-240s left; 179s left now.
+2026-11-26 18:27:01 INFO REASON [breakdown] Not betting: This variant only bets Down; the signal says Up.
+2026-11-26 18:27:57 INFO HEARTBEAT pid=2514 cycles=2290 spot=1727.9650000000001 open_bets=2 fills=13 spot_ok=2290 spot_fail=0 errors=0
+2026-11-26 18:27:59 INFO REASON [sum_arb_5m] Not betting: Need a best ask on both Up and Down to check a sum-of-asks lock.
+2026-11-26 18:28:31 INFO REASON [breakdown] Not betting: Only bets with 90-240s left; 89s left now.
+2026-11-26 18:28:57 INFO HEARTBEAT pid=2514 cycles=2320 spot=1723.7849999999999 open_bets=2 fills=13 spot_ok=2320 spot_fail=0 errors=0
+2026-11-26 18:29:59 INFO HEARTBEAT pid=2514 cycles=2351 spot=1724.3625 open_bets=2 fills=13 spot_ok=2351 spot_fail=0 errors=0
+2026-11-26 18:30:00 INFO REASON [most 15m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 180 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
+2026-11-26 18:30:01 INFO TREND 15m window=1795746600 spot=1724.3625 ptb=1723.8067 3h +2.25% (z +1.6), 15m +0.60% (z +1.5), structure up (HH3 HL2 LH0 LL1), 5m +0.43%, spike 6.5x (3up/2dn of last 5 candles), vol up/down 1.87x, chop-eff 0.20, ann vol 76%, range 1696.98-1734.88 breakout vol up 0.0x / down 0.0x
+2026-11-26 18:30:01 INFO REASON [price_lag_15m] Not betting: Up at 48c: model 53% minus price+fee leaves 3.1c (need 5c after the fee and a safety buffer).
+2026-11-26 18:30:01 INFO REASON [sum_arb_15m] Not betting: Up 48.0c + Down 53.0c + fees = 104.49c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-26 18:30:01 INFO REASON [most 5m] Skipping: Tweak 1 SKIP_FIRST_MINUTE is on and this window is in its first 60 seconds. price_lag / sum_arb still run — a lag edge is most useful early.
+2026-11-26 18:30:01 INFO TREND 5m window=1795746600 spot=1724.3625 ptb=1723.8067 60m +1.36% (z +1.1), 15m +0.60% (z +1.0), structure up (HH2 HL2 LH1 LL1), 5m +0.43%, spike 3.6x (3up/2dn of last 5 candles), vol up/down 2.72x, chop-eff 0.24, ann vol 117%, range 1696.98-1734.63 breakout vol up 0.0x / down 0.0x
+2026-11-26 18:30:01 INFO REASON [sum_arb_5m] Not betting: Up 46.0c + Down 55.0c + fees = 104.47c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-26 18:30:05 INFO REASON [price_lag_15m] Not betting: Daily loss kill switch: today's settled P&L is $-21.45, at or past the -$20.00 pause for this variant. New bets wait until tomorrow (PT).
+2026-11-26 18:30:18 INFO RESOLVED [trend_volume_15m] W003453 Up outcome=Up WON pnl=$+2.36 variant_total=$+4.64
+2026-11-26 18:30:18 INFO RESOLVED [control] W003455 Up outcome=Up WON pnl=$+1.90 variant_total=$-48.72
+2026-11-26 18:30:59 INFO HEARTBEAT pid=2514 cycles=2381 spot=1729.905 open_bets=0 fills=13 spot_ok=2381 spot_fail=0 errors=0
+2026-11-26 18:31:01 INFO REASON [price_lag_15m] Not betting: Up is 7.3c cheap vs the model (76% vs 67c + fee), but spot has only moved $0.205 in the last 8s (need a $0.500 jump the same way as this bet). Logged as a stale edge, not a trade.
+2026-11-26 18:31:01 INFO PAPER FILL [control] 5m W003456 Up $4.93 = 6.16 sh @ 0.80 (fee $0.069) 239s left
+2026-11-26 18:31:01 INFO REASON [control] Buying $4.93 of Up: I put Up at 92%, price+fee is 81.1c, edge 10.7c.
+2026-11-26 18:31:01 INFO REASON [model_lead] Not betting: $1.00 only buys 1.25 shares of Up at 80c; Polymarket's minimum is 5.
+2026-11-26 18:31:01 INFO REASON [breakdown] Not betting: Price is inside its 30-min range ($1,697.48-$1,734.88); no breakout.
+2026-11-26 18:31:01 INFO REASON [max_profit] Not betting: Kelly wanted 28% of $12.00, which is too small for a 5-share bet at 80c under the 25% / floor caps.
+2026-11-26 18:31:01 INFO AUTO_PICK CHECK scope=6h leader=model_lead | net P&L/bets: model_lead +7.16/8, breakdown +1.14/1, control -8.54/27
+2026-11-26 18:31:01 INFO REASON [auto_pick] Not betting: Current pick model_lead (6h +7.16) isn't betting this round; sitting out: #1 model_lead not betting (min_shares).
+2026-11-26 18:31:01 INFO REASON [bankroll_20] Not betting: Bankroll busted at 2026-11-23 12:11:39 PT: $0.07 left, not enough for a minimum bet. Sitting out.
+2026-11-26 18:31:07 INFO REASON [model_lead] Not betting: Up at 69c: my estimate 74% beats price+fee by only 3.8c (need 4c).
+2026-11-26 18:31:11 INFO REASON [max_profit] Not betting: No source strategy has a clear entry in this 5m window (229s left). Cash $12.00.
