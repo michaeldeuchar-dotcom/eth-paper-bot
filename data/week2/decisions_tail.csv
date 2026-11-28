@@ -1,5 +1,4 @@
 ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model_p_up,market_p_up,ask,edge,stake,shares,spot,price_to_beat,english
-2026-11-28 02:17:21 PT,control,5m,1795860900,158.9,skip,hour_filter,,,0.9320,,,,0.00,0.00,1652.3025,1650.5296,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 2:00 PT hour net $-30.12.
 2026-11-28 02:17:21 PT,breakdown,5m,1795860900,158.9,skip,weak_breakout,,,0.9320,0.9050,,,0.00,0.00,1652.3025,1650.5296,"Broke above the 30-min high $1,652.25 but volume only 0.5x normal (need 2.0x)."
 2026-11-28 02:17:21 PT,max_profit,5m,1795860900,158.9,skip,no_signal,,,0.9320,,,,0.00,0.00,1652.3025,1650.5296,No source strategy has a clear entry in this 5m window (159s left). Cash $12.00.
 2026-11-28 02:17:21 PT,auto_pick,5m,1795860900,158.9,skip,hour_filter,,,0.9320,,,,0.00,0.00,1652.3025,1650.5296,Tweak 2 HOUR_FILTER: hour_filter: 8 past trades in the 2:00 PT hour net $-4.35.
@@ -1498,3 +1497,4 @@ ts_pt,variant,timeframe,window_start,secs_left,action,reason,side,est_prob,model
 2026-11-28 03:16:36 PT,sum_arb_15m,15m,1795864500,803.8,skip,no_arb,,,0.4746,,0.5600,,0.00,0.00,1646.1950,1646.4037,Up 56.0c + Down 45.0c + fees = 104.46c/share (need ≤ 98.0c for a locked profit of at least 2c).
 2026-11-28 03:16:36 PT,sum_arb_1h,1h,1795863600,2603.8,skip,no_arb,,,0.5526,,0.6400,,0.00,0.00,1646.1950,1645.4097,Up 64.0c + Down 38.0c + fees = 105.26c/share (need ≤ 98.0c for a locked profit of at least 2c).
 2026-11-28 03:16:36 PT,sum_arb_5m,5m,1795864500,203.8,skip,no_arb,,,0.4473,,0.5900,,0.00,0.00,1646.1950,1646.4037,Up 59.0c + Down 43.0c + fees = 105.41c/share (need ≤ 98.0c for a locked profit of at least 2c).
+2026-11-28 03:16:38 PT,hourly_ride_down,1h,1795863600,2601.8,skip,side_not_allowed,Up,0.5926,0.5552,0.6300,,,0.00,0.00,1646.2350,1645.4097,This variant only bets Down; the signal says Up.
